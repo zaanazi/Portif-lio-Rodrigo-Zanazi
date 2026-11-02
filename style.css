@@ -1,4 +1,5 @@
 /* ===== CORES: troque aqui e o site inteiro muda ===== */
+
 :root{
   --bg:#e8edec; --surface:#f8faf9; --text:#1b292d; --muted:#4d5f63; --line:#c3cfcf; --accent:#1f5f6b;
   box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
@@ -51,12 +52,66 @@ blockquote footer{font:400 .9rem "Work Sans",system-ui,sans-serif;color:var(--mu
 .contact{font-size:1.15rem}
 .print-tip{color:var(--muted);font-size:.9rem;margin-top:2.5rem}
 
+
+
 /* ===== IMPRESSÃO / PDF ===== */
-@media print{
-  body{background:#fff;color:#000}
-  .wrap{padding:0}
-  .tools,.print-tip{display:none}
-  .layer{break-inside:avoid;background:#fff;border-left-width:8px}
-  .strip span{animation:none}
-  a{color:#000}
+
+@media print {
+    body {
+        background: #fff;
+        color: #000;
+    }
+
+    .wrap {
+        padding: 0;
+    }
+
+    .tools, .print-tip {
+        display: none;
+    }
+
+    .layer {
+        break-inside: avoid;
+        background: #fff;
+        border-left-width: 8px;
+    }
+
+    .strip span {
+        animation: none;
+    }
+
+    a {
+        color: #000;
+    }
 }
+
+/* ===== FOTOGRAFIAS ===== */
+
+.foto {
+    width: 100%;
+    margin: 2rem auto;
+}
+
+.foto img {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+/* ===== QR CODE ===== */
+
+.qrcode {
+    width: 100%;
+    max-width: 180px;
+    margin: 2rem auto;
+}
+
+.qrcode img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
